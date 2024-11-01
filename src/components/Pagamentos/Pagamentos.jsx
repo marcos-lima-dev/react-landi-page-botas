@@ -1,15 +1,23 @@
 // src/components/Pagamentos/Pagamentos.jsx
 
 import React from 'react';
+import { useSpring, animated } from 'react-spring'; // Importando useSpring e animated do react-spring
 import 'font-awesome/css/font-awesome.min.css'; // Certifique-se de que esta linha esteja presente
 
 const Pagamentos = () => {
+    // Configurando a animação
+    const props = useSpring({
+        to: { opacity: 1, transform: 'translateY(0)' }, // Estado final da animação
+        from: { opacity: 0, transform: 'translateY(-20px)' }, // Estado inicial da animação
+        config: { tension: 200, friction: 15 }, // Configurações da animação
+    });
+
     return (
         <div className="w-full flex justify-center p-8 bg-gray-100"> {/* Container centralizado */}
             <div className="flex flex-col items-center w-full md:w-3/4">
-                <h2 className="text-5xl font-bold text-center u mb-4">
+                <animated.h2 style={props} className="text-5xl font-bold text-center mb-4"> {/* Aplicando a animação ao h2 */}
                     Calçados Perfeitos p/ EPI
-                </h2>
+                </animated.h2>
                 <p className="text-l font-bold text-center mb-8">Formas de Pagamento</p>
 
                 {/* Div centralizada para os boxes */}
