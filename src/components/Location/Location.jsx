@@ -5,7 +5,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Location = () => {
     const position = { lat: -22.9083, lng: -43.2296 }; // Coordenadas para R. Figueira de Melo
-    const whatsappLink = "https://api.whatsapp.com/send?phone=5511999999999"; // Defina seu link aqui
+    const whatsappLink = "https://api.whatsapp.com/send?phone=5511999999999"; // Link do WhatsApp
 
     return (
         <div className="w-full flex justify-center p-14 bg-gradient-to-br from-teal-500 via-green-600 to-lime-700">

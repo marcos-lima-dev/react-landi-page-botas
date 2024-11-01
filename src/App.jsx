@@ -5,13 +5,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
 import Products from './components/Products/Products';
-
-
-//import Testimonials from './components/Testimonials/Testimonials';
-//import Testimonials from './components/Testimonials/Testimonials';
-//import Gallery from './components/Gallery/Gallery';
-//import FAQ from './components/FAQ/FAQ';
-//import CallToAction from './components/CallToAction/CallToAction';
 import Footer from './components/Footer/Footer';
 import Objetivos from './components/Objetivos/Objetivos';
 import Location from './components/Location/Location';
@@ -30,11 +23,6 @@ function App() {
             <Pagamentos />
             <Motivos />
             <Faq />
-                        
-            {/*<Testimonials />
-            <Gallery />
-            <FAQ />
-            <CallToAction />*/}
             <Footer />
         </>
     );
